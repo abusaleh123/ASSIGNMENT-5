@@ -1,0 +1,10 @@
+body{
+    font-family: "Inter", system-ui;
+    background-color: rgb(255, 255, 255);;
+}
+
+header{
+    position: sticky;
+    top:0 px;
+}
+
