@@ -12,12 +12,14 @@
     <header id="header" class="z-10 header bg-[#ece6d9] pt-3 sticky top-0 backdrop-filter backdrop-blur-lg bg-opacity-40">
         <div class="navbar md:container mx-auto">
             <div class="navbar-start">
-               <button class="btn bg-[#B4F461] font-semibold text-lg px-6">Blog</button>
+               <button id="home-btn" onclick="location.href ='./index.html' " class="btn bg-[#B4F461] font-semibold text-lg px-6">Home</button>
             </div>
+            <div  class="hidden md:inline-block">
             <div class="navbar-center flex items-center">
                 <img class="w-11" src="assets/logo.png" alt="">
               <a class="btn btn-ghost font-semibold text-2xl">Donate Bangladesh</a>
             </div>
+          </div>
             <div class="navbar-end flex items-center gap-2">
                <img src="assets/coin.png" alt="">
                <h3 class="font-medium text-xl"><span id="accountBalance">5500</span> BDT</h3>
@@ -25,8 +27,8 @@
           </div>
     </header>
     <main class="md:container mx-auto">
-        <div class="flex items-center my-10 gap-5">
-            <h1 class="md:text-6xl font-black">Important FAQ</h1>
+        <div class="flex items-center mx-6 my-10 gap-5">
+            <h1 class="md:text-6xl text-xl font-black">Important FAQ</h1>
             <img class="w-14" src="./assets/comment.png" alt="">
 
         </div>

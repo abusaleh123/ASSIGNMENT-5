@@ -1,4 +1,4 @@
-document.getElementById('donate-btn').addEventListener('click', function(event){
+document.getElementById('noakhali-donate-btn').addEventListener('click',function(event){
     event.preventDefault();
     const addMoney = getInputFieldById('donate-money-input');
     console.log(addMoney);
@@ -33,15 +33,14 @@ document.getElementById('donate-btn').addEventListener('click', function(event){
        
    <h1 class="  md:text-3xl text-black "> ${addMoney} Taka is Donated for famine-2024 at Noakhali,Bangladesh</h1>
    <p id="demo " class="mt-4">Date: ${date}</p>
-   `;
-
-     
+   
+   `
+   ;
      document.getElementById('transaction-container2').appendChild(div);
-
-
     }
+
     else{
-        alert('Invalid Donation Amount')
+        alert('Invalid Donation Amount');
     }
 })
 
