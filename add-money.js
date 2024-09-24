@@ -3,8 +3,8 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
     const addMoney = getInputFieldById('donate-money-input');
     console.log(addMoney);
     const accountBalance = getInputFieldByInnerText('accountBalance');
-
-    if(!isNaN(addMoney) && addMoney > 0){
+ 
+    if(!isNaN(addMoney) && addMoney > 0 && addMoney <= accountBalance){
      const mainAccountBalance = getInputFieldByInnerText('main-account-balance');
      console.log(mainAccountBalance);
 
@@ -32,7 +32,7 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
      div.innerHTML = `
        
    <h1 class="  md:text-3xl text-black "> ${addMoney} Taka is Donated for famine-2024 at Noakhali,Bangladesh</h1>
-   <p id="demo " class="mt-4">Date: ${date}</p>
+  
    
    `
    ;
@@ -51,7 +51,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(ev
     console.log(addMoney);
     const accountBalance = getInputFieldByInnerText('accountBalance');
 
-    if(!isNaN(addMoney) && addMoney > 0){
+    if(!isNaN(addMoney) && addMoney > 0 && addMoney <= accountBalance){
      const mainAccountBalance = getInputFieldByInnerText('feni-main-account-balance');
      console.log(mainAccountBalance);
 
@@ -78,7 +78,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(ev
       div.innerHTML = `
         
     <h1 class="  md:text-3xl text-black "> ${addMoney} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
-    <p id="demo " class="mt-4">Date: ${date}</p>
+    <p id="demo" class="mt-4">Date: ${date}</p>
     `;
  
       
@@ -96,7 +96,7 @@ document.getElementById('quota-donate-btn').addEventListener('click', function(e
     console.log(addMoney);
     const accountBalance = getInputFieldByInnerText('accountBalance');
 
-    if(!isNaN(addMoney) && addMoney > 0){
+    if(!isNaN(addMoney) && addMoney > 0 && addMoney <= accountBalance){
      const mainAccountBalance = getInputFieldByInnerText('quota-main-account-balance');
      console.log(mainAccountBalance);
      const mainNewBalance = accountBalance - addMoney;
