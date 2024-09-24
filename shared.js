@@ -12,7 +12,7 @@ function getInputFieldByInnerText (id){
 function showElementById(id){
 
 document.getElementById('addMoney-container').classList.add('hidden');
+document.getElementById('transaction-section').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden');
-    // document.getElementById('history-container').classList.add('hidden');
-    // document.getElementById(id).classList.remove('hidden');
+  
 }

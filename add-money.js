@@ -19,7 +19,6 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
     //  Date
     const date = new Date();
     date.setFullYear(2024);
-    document.getElementById("demo").innerHTML = date;
     // Date
      
      const div = document.createElement('div');
@@ -31,12 +30,11 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
      div.classList.add('rounded-2xl');
      div.innerHTML = `
        
-   <h1 class="  md:text-3xl text-black "> ${addMoney} Taka is Donated for famine-2024 at Noakhali,Bangladesh</h1>
-  
-   
+   <h1 class="  md:text-3xl font-bold "> ${addMoney} Taka is Donated for famine-2024 at Noakhali,Bangladesh</h1>
+    <p id="hello" class="mt-4">Date: ${date}</p>
    `
    ;
-     document.getElementById('transaction-container2').appendChild(div);
+     document.getElementById('transaction-section').appendChild(div);
     }
 
     else{
@@ -62,11 +60,11 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(ev
      document.getElementById('accountBalance').innerText = mainNewBalance;
      my_modal_1.showModal();
 
-
      const date = new Date();
      date.setFullYear(2024);
-     document.getElementById("demo").innerHTML = date;
+    //  document.getElementById("hello").innerHTML = date;
      // Date
+   
       
       const div = document.createElement('div');
       div.classList.add('bg-white');
@@ -75,12 +73,12 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(ev
       div.classList.add('m-5');
       div.classList.add('rounded-2xl');
       div.innerHTML = `
-       <div id="transaction-container2">
-    <h1 class="  md:text-3xl text-black "> ${addMoney} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
-    <p id="demo" class="mt-4">Date: ${date}</p>
-    </div> 
+
+    <h1 class="  md:text-3xl font-bold "> ${addMoney} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
+    <p id="hello" class="mt-4">Date: ${date}</p>
+
     `;
-      document.getElementById('transaction-container2').appendChild(div);
+      document.getElementById('transaction-section').appendChild(div);
     }
     else{
         alert('Invalid Donation Amount')
@@ -107,7 +105,6 @@ document.getElementById('quota-donate-btn').addEventListener('click', function(e
 
      const date = new Date();
      date.setFullYear(2024);
-     document.getElementById("demo").innerHTML = date;
      // Date
       
       const div = document.createElement('div');
@@ -120,11 +117,11 @@ document.getElementById('quota-donate-btn').addEventListener('click', function(e
       div.innerHTML = `
         
     <h1 class="  md:text-3xl font-bold "> ${addMoney} Taka is Donated for Aid for injured in the Quota Movement,Bangladesh</h1>
-    <p id="demo " class="mt-4 font-light">Date: ${date}</p>
+    <p id="hello " class="mt-4 ">Date: ${date}</p>
     `;
  
       
-      document.getElementById('transaction-container2').appendChild(div);
+      document.getElementById('transaction-section').appendChild(div);
         
     }
     else{
