@@ -73,15 +73,13 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(ev
       div.classList.add('border-2')
       div.classList.add('p-5');
       div.classList.add('m-5');
- 
       div.classList.add('rounded-2xl');
       div.innerHTML = `
-        
+       <div id="transaction-container2">
     <h1 class="  md:text-3xl text-black "> ${addMoney} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
     <p id="demo" class="mt-4">Date: ${date}</p>
+    </div> 
     `;
- 
-      
       document.getElementById('transaction-container2').appendChild(div);
     }
     else{
