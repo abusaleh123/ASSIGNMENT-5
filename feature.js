@@ -13,3 +13,7 @@ document.getElementById('donation-btn').addEventListener('click', function(){
     document.getElementById('donation-btn').classList.add('bg-[#b4f461]');
 })
 
+
+document.getElementById('blog-btn').addEventListener('click', function(){
+    window.location.href = './blog.html'
+})

@@ -122,8 +122,8 @@ document.getElementById('quota-donate-btn').addEventListener('click', function(e
       div.classList.add('rounded-2xl');
       div.innerHTML = `
         
-    <h1 class="  md:text-3xl text-black "> ${addMoney} Taka is Donated for Aid for injured in the Quota Movement,Bangladesh</h1>
-    <p id="demo " class="mt-4">Date: ${date}</p>
+    <h1 class="  md:text-3xl font-bold "> ${addMoney} Taka is Donated for Aid for injured in the Quota Movement,Bangladesh</h1>
+    <p id="demo " class="mt-4 font-light">Date: ${date}</p>
     `;
  
       

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Blog || Donate Bangladesh</title>
+</head>
+<body>
+    <header id="header" class="z-10 header bg-[#ece6d9] pt-3 sticky top-0 backdrop-filter backdrop-blur-lg bg-opacity-40">
+        <div class="navbar md:container mx-auto">
+            <div class="navbar-start">
+               <button class="btn bg-[#B4F461] font-semibold text-lg px-6">Blog</button>
+            </div>
+            <div class="navbar-center flex items-center">
+                <img class="w-11" src="assets/logo.png" alt="">
+              <a class="btn btn-ghost font-semibold text-2xl">Donate Bangladesh</a>
+            </div>
+            <div class="navbar-end flex items-center gap-2">
+               <img src="assets/coin.png" alt="">
+               <h3 class="font-medium text-xl"><span id="accountBalance">5500</span> BDT</h3>
+            </div>
+          </div>
+    </header>
+    <main class="md:container mx-auto">
+        <div class="flex items-center my-10 gap-5">
+            <h1 class="md:text-6xl font-black">Important FAQ</h1>
+            <img class="w-14" src="./assets/comment.png" alt="">
+
+        </div>
+
+
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 p-6 border md:container mx-auto">
+            <div class="collapse-title text-xl font-bold ">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects</p>
+            </div>
+          </div>
+
+
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 p-6 border md:container mx-auto">
+            <div class="collapse-title text-xl font-bold ">how do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>There are several methods to select elements from the DOM using JavaScript. like Select by ID, Select by Class Name, Select by Tag Name, Select by CSS Selectors, Select by Query Selector, Query Selector All. etc</p>
+            </div>
+          </div>
+
+
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 p-6 border md:container mx-auto">
+            <div class="collapse-title text-xl font-bold ">What is the event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation is a technique in JavaScript where you attach a single event listener to a parent element, rather than attaching separate event listeners to each individual child element. The event listener on the parent element takes advantage of event bubbling, meaning that when an event occurs on a child element, it "bubbles up" to its parent (and potentially further up the DOM tree).</p>
+            </div>
+          </div>
+
+
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 p-6 border md:container mx-auto">
+            <div class="collapse-title text-xl font-bold ">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>
+                To manipulate an element's attributes in the DOM, use getAttribute(), setAttribute(), and removeAttribute(). For styles, modify the style property (e.g., element.style.propertyName) for inline styles, or use classList to add/remove classes. For computed styles, use window.getComputedStyle(). Direct properties like element.src can also modify attributes.</p>
+            </div>
+          </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="shared.js"></script>
+    <script src="add-money.js"></script>
+    <script src="feature.js"></script>
+    <script src="history.js"></script>
+</body>
+</html>
