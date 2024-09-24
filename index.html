@@ -28,15 +28,16 @@
               </div>
             </div>
             <section id="btnSection" class="btnSection bg-white  flex justify-center items-center gap-4 pt-10 pb-8 mt-8">
-              <button id="donationBtn" class="btn bg-[#b4f461] text-lg font-bold px-8">Donation</button>
-              <button id="historyBtn" class="btn bg-white border-[#111111]/10 text-lg font-semibold px-8">History</button>
+              <button id="donation-btn" class="btn bg-[#b4f461] text-lg font-bold px-8">Donation</button>
+              <button id="history-btn" class="btn bg-white border-[#111111]/10 text-lg font-semibold px-8">History</button>
             </section>
       </header>
 
 
         <main class="md:container mx-auto mt-24">
+          <section id="addMoney-container">
           <!-- Donate Noakhali -->
-           <section>
+           <section id="noakhali-section">
             <div class="hero mt-14 flex mx-auto ">
               <div class=" flex  gap-8 flex-col lg:flex-row-reverse justify-center border-2 py-10 px-10 rounded-xl w-3/4 mx-auto ">
                 <div class="w-2/4 text-center lg:text-left">
@@ -73,7 +74,7 @@
            </section>
            <!-- Donate Noakhali End -->
           <!-- Donate Feni -->
-           <section>
+           <section id="feni-section">
             <div class="hero mt-8 flex mx-auto ">
               <div class=" flex  gap-8 flex-col lg:flex-row-reverse justify-center border-2 py-10 px-10 rounded-xl w-3/4 mx-auto ">
                 <div class="w-2/4 text-center lg:text-left">
@@ -110,7 +111,7 @@
            </section>
            <!-- Donate Feni End -->
           <!-- Donate Quota -->
-           <>
+           <section id="quota-section">
             <div class="hero mt-8 flex mx-auto ">
               <div class=" flex  gap-8 flex-col lg:flex-row-reverse justify-center border-2 py-10 px-10 rounded-xl w-3/4 mx-auto ">
                 <div class="w-2/4 text-center lg:text-left">
@@ -139,12 +140,19 @@
                 </div>
                 <div>
                   <img class="w-auto" src="assets/quota-protest.png" alt="">
-                </div>
-                
-              </div>
-             
+                </div>                
+              </div>            
             </div>
-           
+            </section>
+          </section>
+           <!-- History-section start -->
+           <div id="transaction-section" class="hidden">
+            <div id="transaction-container2" class="space-y-3 text-black">
+              <p id="demo" class="hidden"></p>
+  
+            </div>
+           </div>
+            <!-- History Section End -->
          
         </main>
         <!-- Modal -->
@@ -171,5 +179,7 @@
         <script src="script.js"></script>
         <script src="shared.js"></script>
         <script src="add-money.js"></script>
+        <script src="feature.js"></script>
+        <script src="history.js"></script>
 </body>
 </html>
